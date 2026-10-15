@@ -1,0 +1,5 @@
+Nama : Rifki ABdillah Al Afif
+Nim  : 2411512027
+Kelas: Pempar A
+nomor 4.Refleksi singkat:
+Penggunaan Manager() tepat dipilih ketika membutuhkan struktur data yang kompleks seperti dict atau list yang dapat diakses dan dimodifikasi secara fleksibel oleh banyak proses tanpa perlu mengelola pemetaan memori manual. Contoh kasus nyatanya adalah sistem caching terpusat atau session store pada aplikasi web multi-proses.   Sebaliknya, Value atau Array lebih tepat digunakan untuk tipe data primitif (seperti int, float, atau array berukuran tetap) dalam skenario yang membutuhkan performa dan komputasi tinggi, misalnya pemrosesan matriks atau agregasi angka acak.   Trade-off utamanya terletak pada kemudahan versus performa. Manager() memberikan kemudahan abstraksi objek Python tingkat tinggi, tetapi memiliki overhead komunikasi antar-proses (IPC) dan serialization yang lebih lambat. Sementara Value / Array menggunakan memori bersama langsung di tingkat C, sehingga memberikan waktu eksekusi yang jauh lebih cepat meskipun memerlukan pengelolaan penguncian (Lock) secara eksplisit.
